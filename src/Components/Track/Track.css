@@ -36,8 +36,7 @@
     color: rgba(256, 256, 256, 0.8);
   }
   
-  .Track-information audio {
+audio { 
     padding : .22rem;
-    max-height: 30%;
-    max-width: 70%;
-  }
+    background-color:rgba(0, 0, 0, 1) !important;
+  } 

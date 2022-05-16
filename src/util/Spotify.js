@@ -1,10 +1,6 @@
 
 const clientId = '';
 const redirectUri = 'http://localhost:3000/';
-<<<<<<< HEAD
-
-=======
->>>>>>> 0ce3974a74574fb78387bf7791939c6e56d437e2
 
 let accessToken;
 
@@ -60,7 +56,7 @@ const Spotify = {
             ).then(response => response.json()
             ).then(jsonResponse => {
                 userId = jsonResponse.id;
-                return fetch(`/v1/users/${userId}/playlists`, 
+                return fetch(`https://api.spotify.com/v1/users/${userId}/playlists`, 
                 {
                     headers: headers,
                     method: 'POST',
